@@ -1,0 +1,9 @@
+<ModMetaData>
+    <name>三十的萌螈食物扩展[1.6]</name>
+    <author>三十幂</author>
+    <packageId>sanshimi.MoeLoti.MoreFood</packageId>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <description> 不满于 边缘仙路-锦衣玉食 更新太慢，于是决定自己动手。\n 【主要内容】\n -新增五种食物。竹笋炒肉片、竹筒饭、烤番薯、甜羹、咸羹。\n -新增两种仪式。挖冬笋、挖春笋。\n 在冬季和春季，翠玉竹林附近将会有概率生长出可以食用的翠玉竹笋。此时可以号召殖民者举行挖竹笋仪式。仪式要求：附近成熟的翠玉竹作物大于10。仪式效果越好，产出冬笋或春笋越多。\n -新增作物。番薯。 \n -新增制成品。番薯粉，于萌螈捣药台上制作，可用于制作羹食。</description>
+</ModMetaData>
