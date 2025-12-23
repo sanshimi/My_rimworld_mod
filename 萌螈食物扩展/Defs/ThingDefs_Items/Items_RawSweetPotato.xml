@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="PlantFoodRawBase">
+
+        <!-- defNames must be unique across all mods -->
+        <!-- It's generally recommended that you prefix it with your mod name to prevent mod collisions -->
+        <defName>MoeLotl_MoreFood_RawSweetPotato</defName>
+
+        <!-- This is the display name of this item. It should be lowercase unless it's a proper name -->
+        <!-- Labels will get automatically capitalized by RimWorld's grammar resolver if necessary -->
+        <label>raw sweet potato</label>
+
+        <!-- The full description of this item. It is seen by players when inspecting the full stat card -->
+        <description>Raw sweet potatoes. These starchy tubers can be roasted into fragrant baked sweet potatoes, or ground into sweet potato flour to prepare warm, filling porridges.</description>
+
+        <!-- Allows this weapon to be used by pawn backstories as a starting possession -->
+        <!-- 允许该物品作为“人物背景的初始携带物品”，并指定数量范围 -->
+        <possessionCount>10</possessionCount>
+
+        <!-- Sets the item graphic for this ThingDef -->
+        <!-- 路径设置，忽略文件后缀.png -->
+        <graphicData>
+            <texPath>MoeLotl_MoreFood_Raw_Food_Items/RawSweetPotato</texPath>
+        </graphicData>
+
+        <!-- Determines base stats for this item -->
+        <statBases>
+            <!-- All vanilla raw plant food has 1.1 as their MarketValue -->
+            <!-- 市场价值 -->
+            <MarketValue>1.3</MarketValue>
+        </statBases>
+
+        <!-- Sets various properties pertaining to ingestibility -->
+        <ingestible>
+            <!-- Sets what kind of food this item is considered for purposes of what animals are willing to eat it -->
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+
+        <!-- Adds various thing components (ThingComps) to extend the behavior of this Thing -->
+        <!-- 腐烂设置 -->
+        <comps>
+
+            <!-- CompProperties_Rottable causes this item to rot if it is not frozen -->
+            <li Class="CompProperties_Rottable">
+
+                <!-- The number of days this item takes to rot from fresh -->
+                <!-- At 30 days, it rots slower than raw fruits, but faster than grains such as rice or corn -->
+                <daysToRotStart>40</daysToRotStart>
+
+                <!-- If set to true, this item is destroyed if it fully rots -->
+                <!-- All vanilla raw food types are destroyed when rotten -->
+                <rotDestroys>true</rotDestroys>
+            </li>
+
+        </comps>
+
+    </ThingDef>
+
+</Defs>

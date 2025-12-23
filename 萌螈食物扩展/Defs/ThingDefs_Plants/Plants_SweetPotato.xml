@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="PlantBase">
+        <!-- 萌螈更多食物扩展-番薯 -->
+        <defName>MoeLotl_MoreFood_SweetPotato</defName>
+        <!-- 番薯小写标签 -->
+        <label>sweet potato plant</label>
+        <description>Sweet potatoes are hardy, high-yield root crops commonly cultivated in warm and subtropical regions. Their underground tubers are rich in carbohydrates and can be consumed directly or processed into a variety of foods. In resource-scarce environments, sweet potatoes are valued as a reliable staple due to their consistent yields and low cultivation demands.</description>
+        <statBases>
+            <!-- 生命值 -->
+            <MaxHitPoints>85</MaxHitPoints>
+            <!-- 营养值 -->
+            <Nutrition>0.45</Nutrition>
+        </statBases>
+        <graphicData>
+            <!-- 成熟植物贴图路径，根目录为你mod文件的Textures -->
+            <!-- 为了防止与其他mod冲突，这里在一级目录中增加了模组名前缀以提高辨识度 -->
+            <texPath>MoeLotl_MoreFood_Plants/SweetPotato</texPath>
+            <!-- 从文件夹中随机选择一张图片进行贴图 -->
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <!-- 可被玩家鼠标选中 -->
+        <selectable>true</selectable>
+        <!-- 移动成本 -->
+        <pathCost>14</pathCost>
+        <!-- 可食用性标签 -->
+        <ingestible/>
+        <plant>
+            <!-- 未成熟植物贴图路径设置 -->
+            <immatureGraphicPath>MoeLotl_MoreFood_Plants/SweetPotato_Immature</immatureGraphicPath>
+            <!-- 土壤肥沃敏感度 -->
+            <fertilitySensitivity>0.4</fertilitySensitivity>
+            <!-- 冬天是否死亡 -->
+            <dieIfLeafless>true</dieIfLeafless>
+            <!-- 收获工作量 -->
+            <harvestWork>400</harvestWork>
+            <!-- 可用收获设计器 -->
+            <harvestTag>Standard</harvestTag>
+            <!-- 收获物定义 -->
+            <harvestedThingDef>MoeLotl_MoreFood_RawSweetPotato</harvestedThingDef>
+            <!-- 设置每单位基础产量 -->
+            <harvestYield>11</harvestYield>
+            <!-- 播种工作量 -->
+            <sowWork>250</sowWork>
+            <!-- 最低种植等级 -->
+            <sowMinSkill>3</sowMinSkill>
+            <!-- 可种植地形标签 -->
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <!-- 风吹摆动幅度 -->
+            <topWindExposure>0.1</topWindExposure>
+            <!-- 生长周期 -->
+            <growDays>4.8</growDays>
+            <!-- 生长时视觉大小变化 -->
+            <visualSizeRange>0.5~1.05</visualSizeRange>
+            <!-- 野生植物生成优先级 -->
+            <wildOrder>2</wildOrder>
+            <!-- 归属于植物 -->
+            <purpose>Food</purpose>
+            <!-- 人类可食用植物标记 -->
+            <humanFoodPlant>true</humanFoodPlant>
+        </plant>
+    </ThingDef>
+</Defs>
